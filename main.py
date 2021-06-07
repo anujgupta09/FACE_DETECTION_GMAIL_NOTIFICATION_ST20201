@@ -75,8 +75,8 @@ while True:
 
         s = smtplib.SMTP('smtp.gmail.com', 587)
         s.starttls()
-        # stored file secretly on my device nee to put ur pass their
-        s.login(fromaddr, passwords.gmail)
+        # stored file secretly on my device need to put ur pass their
+        s.login(fromaddr, passwords.gmail)   #put either ur pass directly here or make a seperate file and import here 
         text = msg.as_string()
         s.sendmail(fromaddr, toaddr, text)
 
